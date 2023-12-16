@@ -1,0 +1,40 @@
+#offcanvasRight{
+    width: 100vh;
+}
+
+@media screen and (min-width: 960px) {
+    .nuovo-studente{
+        position:absolute;
+        right: 3%;
+    }
+
+    .flex-lg{
+        display: flex;
+        align-items: center;
+    }
+
+    #offcanvasRight{
+        width: 100vh;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .nuovo-studente{
+        position:absolute;
+        right: 3%;
+    }
+
+    .flex-lg{
+        display: flex;
+        align-items: center;
+        gap: 10%;
+    }
+
+    .studenti-online{
+        width: 30%;
+    }
+
+    #sezione-nuovo-studente{
+        height: 10vh;
+    }
+}
