@@ -55,7 +55,7 @@
           </nav>
     </header>
     <main class="d-flex">
-        <section  style="height: calc(100vh - 80px);">
+        <section  style="height: 92vh;">
             <div data-bs-theme="dark" id="sidebar" class="d-flex flex-column flex-shrink-0 bg-primary-subtle h-100" style="width: fit-content">                
                 <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
                   <li class="nav-item">
@@ -85,93 +85,169 @@
                 </div>
               </div> 
         </section>
-        <section id="sezione-nuovo-studente" style="min-height: 15vh; width: 100%;" class="bg-primary">
-            <div class="container-fluid">   
-                <div class="nuovo-studente pt-4 text-light d-flex gap-3 align-items-center">
-                    <h5>Nuovo Studente</h5>
-                    <button class="btn btn-primary border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+        <section class="overflow-scroll overflow-x-hidden">
+            <div id="sezione-nuovo-studente" style="min-height: 15vh; width: 100vw;" class="bg-primary">
+                <div class="container-fluid">   
+                    <div class="nuovo-studente pt-4 text-light d-flex gap-3 align-items-center">
+                        <h5>Nuovo Studente</h5>
+                        <button class="btn btn-primary border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
 
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body lh-lg">
+                                <div>    
+                                    <span><strong>Nome</strong></span>
+                                    <input type="text" class="form-control" aria-label="name">
+                                </div>
+                                <div>
+                                    <span class="pb-1"><strong>Cognome</strong></span>
+                                    <input type="text" class="form-control" aria-label="surname">
+                                </div>
+                                <div class="d-flex flex-column">                                
+                                    <p><strong>Email</strong></p>                              
+                                    <div class="input-group">                                                              
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="pb-1"><strong>Password</strong></span>
+                                    <input type="password" class="form-control" aria-label="password">
+                                </div>
+                                <div>
+                                    <span class="pb-1"><strong>Indirizzo</strong></span>
+                                    <input type="text" class="form-control" aria-label="address">
+                                </div>
+                                <div>
+                                    <span class="pb-1"><strong>Citta</strong></span>
+                                    <input type="text" class="form-control" aria-label="City">
+                                </div>
+                                <div class="d-flex flex-column">                                
+                                    <p><strong>Stato</strong></p>                              
+                                    <div class="input-group">                                                                                                 
+                                        <input type="text" class="form-control" placeholder="Scegli..." aria-label="Username" aria-describedby="basic-addon1">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-angle-down"></i></span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="pb-1"><strong>CAP</strong></span>
+                                    <input type="text" class="form-control" aria-label="Cap">
+                                </div>
+                                <div class="d-flex flex-column">                                
+                                    <p><strong>Foto</strong></p>                              
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1">Scegli file</span>                                                                                                 
+                                        <input type="text" class="form-control" placeholder="Nessun File Selezionato" aria-label="Username" aria-describedby="basic-addon1">                                   
+                                    </div>
+                                </div>
+                                <div>
+                                    <input class="my-4" type="checkbox"> Seleziona per proseguire 
+                                </div>
+                                <div class="d-flex gap-1">
+                                    <button class="bg-primary rounded-3 border-0 text-light px-3">Salva</button>
+                                    <button class="bg-warning rounded-3 border-0 px-3">Svuota</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="offcanvas-body lh-lg">
-                            <div>    
-                                <span><strong>Nome</strong></span>
-                                <input type="text" class="form-control" aria-label="name">
+                    </div>
+                    <div class="flex-lg">
+                        <div>                    
+                            <div class="text-light mt-3 d-flex gap-3 align-items-center">
+                                <h1>Boolean</h1>
+                                <p class="px-2 mt-3" style="border: 1px solid black; border-radius: 10px;">Piano blaze</p>
                             </div>
-                            <div>
-                                <span class="pb-1"><strong>Cognome</strong></span>
-                                <input type="text" class="form-control" aria-label="surname">
-                            </div>
-                            <div class="d-flex flex-column">                                
-                                <p><strong>Email</strong></p>                              
-                                <div class="input-group">                                                              
-                                    <span class="input-group-text" id="basic-addon1">@</span>
-                                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-                                </div>
-                            </div>
-                            <div>
-                                <span class="pb-1"><strong>Password</strong></span>
-                                <input type="password" class="form-control" aria-label="password">
-                            </div>
-                            <div>
-                                <span class="pb-1"><strong>Indirizzo</strong></span>
-                                <input type="text" class="form-control" aria-label="address">
-                            </div>
-                            <div>
-                                <span class="pb-1"><strong>Citta</strong></span>
-                                <input type="text" class="form-control" aria-label="City">
-                            </div>
-                            <div class="d-flex flex-column">                                
-                                <p><strong>Stato</strong></p>                              
-                                <div class="input-group">                                                                                                 
-                                    <input type="text" class="form-control" placeholder="Scegli..." aria-label="Username" aria-describedby="basic-addon1">
-                                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-angle-down"></i></span>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="pb-1"><strong>CAP</strong></span>
-                                <input type="text" class="form-control" aria-label="Cap">
-                            </div>
-                            <div class="d-flex flex-column">                                
-                                <p><strong>Foto</strong></p>                              
-                                <div class="input-group">
-                                    <span class="input-group-text" id="basic-addon1">Scegli file</span>                                                                                                 
-                                    <input type="text" class="form-control" placeholder="Nessun File Selezionato" aria-label="Username" aria-describedby="basic-addon1">                                   
-                                </div>
-                            </div>
-                            <div>
-                                <input class="my-4" type="checkbox"> Seleziona per proseguire 
-                            </div>
-                            <div class="d-flex gap-1">
-                                <button class="bg-primary rounded-3 border-0 text-light px-3">Salva</button>
-                                <button class="bg-warning rounded-3 border-0 px-3">Svuota</button>
+                            <div class="d-flex text-light gap-1 justify-content-start">
+                                <p class="px-2" style="border: 1px solid black; border-radius: 10px;">3 app</p>
+                                <span><i class="fa-solid fa-angles-right" style="color: #ffffff;"></i></span>
+                                <p class="px-2 d-none d-lg-block" style="border: 1px solid black; border-radius: 10px;">Boolean mobile app</p>
+                                <p class="px-2 d-none d-lg-block" style="border: 1px solid black; border-radius: 10px;">Boolean web app</p>
+                                <p class="px-2 d-none d-lg-block" style="border: 1px solid black; border-radius: 10px;">Boolean blog app</p>
+                                <span><i class="px-2 py-1 d-block d-lg-none fa-solid fa-plus" style="border: 1px solid black; border-radius: 10px;"></i></span>
                             </div>
                         </div>
-                    </div>
+                        <div class="studenti-online text-light pb-2">
+                            <p><strong>Studenti online negli ultimi 30 minuti</strong></p>
+                            <h2>125</h2>              
+                        </div>
+                    </div>             
                 </div>
-                <div class="flex-lg">
-                <div>                    
-                    <div class="text-light mt-3 d-flex gap-3 align-items-center">
-                        <h1>Boolean</h1>
-                        <p class="px-2 mt-3" style="border: 1px solid black; border-radius: 10px;">Piano blaze</p>
-                    </div>
-                    <div class="d-flex text-light gap-1 justify-content-start">
-                        <p class="px-2" style="border: 1px solid black; border-radius: 10px;">3 app</p>
-                        <span><i class="fa-solid fa-angles-right" style="color: #ffffff;"></i></span>
-                        <p class="px-2 d-none d-lg-block" style="border: 1px solid black; border-radius: 10px;">Boolean mobile app</p>
-                        <p class="px-2 d-none d-lg-block" style="border: 1px solid black; border-radius: 10px;">Boolean web app</p>
-                        <p class="px-2 d-none d-lg-block" style="border: 1px solid black; border-radius: 10px;">Boolean blog app</p>
-                        <span><i class="px-2 py-1 d-block d-lg-none fa-solid fa-plus" style="border: 1px solid black; border-radius: 10px;"></i></span>
-                    </div>
+            </div>
+            <div class="container-fluid mt-2 d-flex flex-column">
+                <h2 class="p-1 rounded-2 border border-bottom-0" style="background-color: #F7F7F7;">Prossime classi</h2>
+                <div>
+                    <table class="table" style="border: 1px solid gray;">
+                        <thead>
+                          <tr>
+                            <th scope="col" colspan="3">Nome</th>
+                            <th scope="col" class="ao-za d-none d-md-inline-block w-50">Data inizio</th>
+                            <th scope="col" class="ao-za d-none d-md-inline-block w-50">ROI</th>
+                            <th scope="col">Stato</th>
+                            <th scope="col">Azioni</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row" colspan="3"><i class="fa-solid fa-code rounded-5 p-1" style="color: #ffffff; background-color: red;"></i> Classe 75</th>
+                            <td class="mt-1 d-none d-md-inline-block w-50">15 feb 2021</td>
+                            <td class="mt-1 d-none d-md-inline-block w-50">20%</td>
+                            <td><span class="bg-success px-2 rounded-3 text-light">Done</span></td>
+                            <td><i class="fa-solid fa-pencil rounded-2 p-1" style="border: 1px solid gray;"></i> <i class="fa-solid fa-trash-can rounded-2 p-1" style="border: 1px solid gray;"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" colspan="3"><i class="fa-solid fa-code rounded-5 p-1" style="color: #ffffff; background-color: red;"></i> Classe 76</th>
+                            <td class="mt-1 d-none d-md-inline-block w-50">16 feb 2021</td>
+                            <td class="mt-1 d-none d-md-inline-block w-50">20%</td>
+                            <td><span class="bg-success px-2 rounded-3 text-light">Done</span></td>
+                            <td><i class="fa-solid fa-pencil rounded-2 p-1" style="border: 1px solid gray;"></i> <i class="fa-solid fa-trash-can rounded-2 p-1" style="border: 1px solid gray;"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" colspan="3"><i class="fa-solid fa-code rounded-5 p-1" style="color: #ffffff; background-color: red;"></i> Classe 77</th>
+                            <td class="mt-1 d-none d-md-inline-block w-50">17 feb 2021</td>
+                            <td class="mt-1 d-none d-md-inline-block w-50">20%</td>
+                            <td><span class="bg-warning px-2 rounded-3 text-light">process</span></td>
+                            <td><i class="fa-solid fa-pencil rounded-2 p-1" style="border: 1px solid gray;"></i> <i class="fa-solid fa-trash-can rounded-2 p-1" style="border: 1px solid gray;"></i></td>
+                          </tr>
+                          <tr>
+                            <th  scope="row" colspan="3"><i class="fa-solid fa-code rounded-5 p-1" style="color: #ffffff; background-color: red;"></i> Classe 78</th>
+                            <td class="mt-1 d-none d-md-inline-block w-50">18 feb 2021</td>
+                            <td class="mt-1 d-none d-md-inline-block w-50">20%</td>
+                            <td><span class="bg-success px-2 rounded-3 text-light">Done</span></td>
+                            <td><i class="fa-solid fa-pencil rounded-2 p-1" style="border: 1px solid gray;"></i> <i class="fa-solid fa-trash-can rounded-2 p-1" style="border: 1px solid gray;"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" colspan="3"><i class="fa-solid fa-code rounded-5 p-1" style="color: #ffffff; background-color: red;"></i> Classe 79</th>
+                            <td class="mt-1 d-none d-md-inline-block w-50">19 feb 2021</td>
+                            <td class="mt-1 d-none d-md-inline-block w-50">20%</td>
+                            <td><span class="bg-danger px-2 rounded-3 text-light">failed</span></td>
+                            <td><i class="fa-solid fa-pencil rounded-2 p-1" style="border: 1px solid gray;"></i> <i class="fa-solid fa-trash-can rounded-2 p-1" style="border: 1px solid gray;"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" colspan="3"><i class="fa-solid fa-code rounded-5 p-1" style="color: #ffffff; background-color: red;"></i> Classe 80</th>
+                            <td class="mt-1 d-none d-md-inline-block w-50">20 feb 2021</td>
+                            <td class="mt-1 d-none d-md-inline-block w-50">20%</td>
+                            <td><span class="bg-success px-2 rounded-3 text-light">Done</span></td>
+                            <td><i class="fa-solid fa-pencil rounded-2 p-1" style="border: 1px solid gray;"></i> <i class="fa-solid fa-trash-can rounded-2 p-1" style="border: 1px solid gray;"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" colspan="3"><i class="fa-solid fa-code rounded-5 p-1" style="color: #ffffff; background-color: red;"></i> Classe 81</th>
+                            <td class="mt-1 d-none d-md-inline-block w-50">21 feb 2021</td>
+                            <td class="mt-1 d-none d-md-inline-block w-50">20%</td>
+                            <td><span class="bg-danger px-2 rounded-3 text-light">failed</span></td>
+                            <td><i class="fa-solid fa-pencil rounded-2 p-1" style="border: 1px solid gray;"></i> <i class="fa-solid fa-trash-can rounded-2 p-1" style="border: 1px solid gray;"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" colspan="3"><i class="fa-solid fa-code rounded-5 p-1" style="color: #ffffff; background-color: red;"></i> Classe 82</th>
+                            <td class="mt-1 d-none d-md-inline-block w-50">22 feb 2021</td>
+                            <td class="mt-1 d-none d-md-inline-block w-50">20%</td>
+                            <td><span class="bg-success px-2 rounded-3 text-light">Done</span></td>
+                            <td><i class="fa-solid fa-pencil rounded-2 p-1" style="border: 1px solid gray;"></i> <i class="fa-solid fa-trash-can rounded-2 p-1" style="border: 1px solid gray;"></i></td>
+                          </tr>
+                        </tbody>
+                      </table> 
                 </div>
-                <div class="studenti-online text-light">
-                    <p><strong>Studenti online negli ultimi 30 minuti</strong></p>
-                    <h2>125</h2>              
-                </div>
-                </div>             
             </div> 
         </section>
     </main>
