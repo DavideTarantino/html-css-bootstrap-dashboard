@@ -14,7 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-    <header>
+    <header class="sticky-top bg-white z-0">
         <nav class="navbar navbar-expand-lg .bg-light flex-nowrap">
             <div class="container-fluid gap-2">
                 <img class="img-fluid d-lg-none" height="60" width="60" src="./assets/img/mobile-logo.png" alt="logo">
@@ -55,7 +55,7 @@
           </nav>
     </header>
     <main class="d-flex">
-        <section  style="height: 92vh;">
+        <section style="height: 92vh;">
             <div data-bs-theme="dark" id="sidebar" class="d-flex flex-column flex-shrink-0 bg-primary-subtle h-100" style="width: fit-content">                
                 <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
                   <li class="nav-item">
@@ -84,8 +84,9 @@
                   </a>
                 </div>
               </div> 
+            </div>
         </section>
-        <section class="overflow-scroll overflow-x-hidden">
+        <section class="overflow-x-hidden">
             <div id="sezione-nuovo-studente" style="min-height: 15vh; width: 100vw;" class="bg-primary">
                 <div class="container-fluid">   
                     <div class="nuovo-studente pt-4 text-light d-flex gap-3 align-items-center">
@@ -176,9 +177,9 @@
                 </div>
             </div>
             <div class="container-fluid mt-2 d-flex flex-column">
-                <h2 class="p-1 rounded-2 border border-bottom-0" style="background-color: #F7F7F7;">Prossime classi</h2>
-                <div>
-                    <table class="table" style="border: 1px solid gray;">
+              <span class="p-1 rounded-top-3 fs-3 border" style="background-color: #F7F7F7;">Prossime classi</span>  
+                <div>                 
+                    <table class="table border-top-0 border">                    
                         <thead>
                           <tr>
                             <th scope="col" colspan="3">Nome</th>
@@ -248,7 +249,46 @@
                         </tbody>
                       </table> 
                 </div>
-            </div> 
+            </div>
+            <div class="container-fluid mt-2 d-flex flex-column">
+              <span class="p-1 rounded-top-3 fs-3 border" style="background-color: #F7F7F7;">F.A.Q.</span>
+              <div class="p-4 d-flex flex-column border-top-0 border">
+                <div class="d-flex gap-3 justify-content-between align-items-center">
+                  <span class="fs-5">Come si aggiunge un nuovo studente ?</span>
+                  <span class="fs-4"><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+                <hr>
+                <div class="d-flex gap-3 justify-content-between align-items-center">
+                  <span class="fs-5">Come posso accedere alle informazioni del mio account ?</span>
+                  <span class="fs-4"><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+                <hr>
+                <div class="d-flex gap-3 justify-content-between align-items-center">
+                  <span class="fs-5">Posso usare questa dashboard da mobile ?</span>
+                  <span class="fs-4"><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid mt-2 d-flex flex-column pt-4">
+              <span class="p-1 rounded-top-3 fs-3 border" style="background-color: #F7F7F7;">Todo</span>
+              <div class="p-4 d-flex flex-column border-top-0 border">
+                <div class="p-1 d-flex flex-column rounded-2 border">
+                  <div class="d-flex mx-2 pt-2 gap-3 align-items-center">
+                    <input class="form-check-input" type="checkbox" value="" aria-label="Checkbox for following text input"> 
+                    <span class="fs-4">Kickoff nuove classi</span>
+                  </div>
+                  <hr>
+                  <div class="d-flex gap-3 mx-2 align-items-center">
+                    <input class="form-check-input" type="checkbox" value="" aria-label="Checkbox for following text input"> 
+                    <span class="fs-4">Lezione su Bootstrap 5 in classe #75</span>
+                  </div>
+                  <hr>
+                  <div class="d-flex gap-3 pb-2 mx-2 align-items-center">
+                    <input class="form-check-input" type="checkbox" value="" aria-label="Checkbox for following text input"> 
+                    <span class="fs-4">Controllare username github studenti</span>
+                  </div>
+                </div>
+              </div>
         </section>
     </main>
 </body>
