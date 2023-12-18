@@ -14,7 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-    <header class="sticky-top bg-white z-0">
+    <header class="sticky-top z-0 bg-white">
         <nav class="navbar navbar-expand-lg .bg-light flex-nowrap">
             <div class="container-fluid gap-2">
                 <img class="img-fluid d-lg-none" height="60" width="60" src="./assets/img/mobile-logo.png" alt="logo">
@@ -55,7 +55,7 @@
           </nav>
     </header>
     <main class="d-flex">
-        <section style="height: 92vh;">
+        <section style="height: calc(100vh -10%);">
             <div data-bs-theme="dark" id="sidebar" class="d-flex flex-column flex-shrink-0 bg-primary-subtle h-100" style="width: fit-content">                
                 <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
                   <li class="nav-item">
@@ -176,9 +176,9 @@
                     </div>             
                 </div>
             </div>
-            <div class="container-fluid mt-2 d-flex flex-column">
+            <div class="container-fluid mt-2 d-flex flex-column col-12 col-md-12 col-lg-8">
               <span class="p-1 rounded-top-3 fs-3 border" style="background-color: #F7F7F7;">Prossime classi</span>  
-                <div>                 
+                  <div>                 
                     <table class="table border-top-0 border">                    
                         <thead>
                           <tr>
@@ -247,10 +247,10 @@
                             <td><i class="fa-solid fa-pencil rounded-2 p-1" style="border: 1px solid gray;"></i> <i class="fa-solid fa-trash-can rounded-2 p-1" style="border: 1px solid gray;"></i></td>
                           </tr>
                         </tbody>
-                      </table> 
-                </div>
+                    </table> 
+                  </div>
             </div>
-            <div class="container-fluid mt-2 d-flex flex-column">
+            <div class="container-fluid mt-2 d-flex flex-column col-12 col-md-12 col-lg-8">
               <span class="p-1 rounded-top-3 fs-3 border" style="background-color: #F7F7F7;">F.A.Q.</span>
               <div class="p-4 d-flex flex-column border-top-0 border">
                 <div class="d-flex gap-3 justify-content-between align-items-center">
@@ -269,7 +269,9 @@
                 </div>
               </div>
             </div>
-            <div class="container-fluid mt-2 d-flex flex-column pt-4">
+          </div>
+          <div>
+            <div class="container-fluid mt-2 d-flex flex-column pt-4 col-12 col-md-12 col-lg-4">
               <span class="p-1 rounded-top-3 fs-3 border" style="background-color: #F7F7F7;">Todo</span>
               <div class="p-4 d-flex flex-column border-top-0 border">
                 <div class="p-1 d-flex flex-column rounded-2 border">
@@ -289,6 +291,36 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="container-fluid mt-2 d-flex flex-column pt-4 col-12 col-md-12 col-lg-4">
+                <div class="p-4 d-flex flex-column rounded-2 border">
+                  <div class="p-1 d-flex flex-column rounded-2 border">
+                    <div class="mx-2 pt-2">
+                        <img style="width: 100%;" src="./assets/img/stats.jpeg" alt="data">
+                        <h2>Utenti attivi</h2>
+                        <p class="fs-5">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                    </div>
+                    <hr>
+                    <div class="mx-2 "> 
+                      <span class="fs-4">Gennaio: 1200</span>
+                    </div>
+                    <hr>
+                    <div class="pb-2 mx-2"> 
+                      <span class="fs-4">Febbraio: 800</span>
+                    </div>
+                    <hr>
+                    <div class="pb-2 mx-2"> 
+                      <span class="fs-4">Marzo: 1500</span>
+                    </div>
+                    <hr>
+                    <div class="pb-2 mx-2"> 
+                      <span class="fs-4"><a href="#">Visaualizza report approfondito</a></span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
         </section>
     </main>
 </body>
