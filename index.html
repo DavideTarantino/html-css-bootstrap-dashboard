@@ -55,7 +55,7 @@
           </nav>
     </header>
     <main class="d-flex">
-        <section style="height: calc(100vh -10%);">
+       <section style="height: calc(100vh -10%);"> 
             <div data-bs-theme="dark" id="sidebar" class="d-flex flex-column flex-shrink-0 bg-primary-subtle h-100" style="width: fit-content">                
                 <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
                   <li class="nav-item">
@@ -87,14 +87,14 @@
             </div>
         </section>
         <section class="overflow-x-hidden">
-            <div id="sezione-nuovo-studente" style="min-height: 15vh; width: 100vw;" class="bg-primary">
-                <div class="container-fluid">   
-                    <div class="nuovo-studente pt-4 text-light d-flex gap-3 align-items-center">
+            <div id="sezione-nuovo-studente" style="height: auto; width: 92vw;" class="bg-primary">
+                <div class="container-fluid d-lg-flex justify-content-between align-items-center">   
+                    <div class="nuovo-studente pt-4 text-light d-flex gap-3 align-items-center order-1">
                         <h5>Nuovo Studente</h5>
                         <button class="btn btn-primary border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
 
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                            <div class="offcanvas-header">
+                            <div class="offcanvas-header order-1">
                                 <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
@@ -154,7 +154,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex-lg">
                         <div>                    
                             <div class="text-light mt-3 d-flex gap-3 align-items-center">
                                 <h1>Boolean</h1>
@@ -172,13 +171,13 @@
                         <div class="studenti-online text-light pb-2">
                             <p><strong>Studenti online negli ultimi 30 minuti</strong></p>
                             <h2>125</h2>              
-                        </div>
-                    </div>             
+                        </div>           
                 </div>
             </div>
-            <div class="container-fluid mt-2 d-flex flex-column col-12 col-md-12 col-lg-8">
-              <span class="p-1 rounded-top-3 fs-3 border" style="background-color: #F7F7F7;">Prossime classi</span>  
-                  <div>                 
+          <div class="d-lg-flex overflow-auto" style="flex-wrap: wrap;">
+            <div class="container-fluid mt-2 d-flex flex-column col-12 col-md-12 col-lg-6">           
+                 <span class="p-1 rounded-top-3 fs-3 border" style="background-color: #F7F7F7;">Prossime classi</span>    
+                  <div>                                   
                     <table class="table border-top-0 border">                    
                         <thead>
                           <tr>
@@ -250,7 +249,7 @@
                     </table> 
                   </div>
             </div>
-            <div class="container-fluid mt-2 d-flex flex-column col-12 col-md-12 col-lg-8">
+            <div class="container-fluid mt-2 d-flex flex-column col-12 col-md-12 col-lg-6 order-2">
               <span class="p-1 rounded-top-3 fs-3 border" style="background-color: #F7F7F7;">F.A.Q.</span>
               <div class="p-4 d-flex flex-column border-top-0 border">
                 <div class="d-flex gap-3 justify-content-between align-items-center">
@@ -269,8 +268,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div>
             <div class="container-fluid mt-2 d-flex flex-column pt-4 col-12 col-md-12 col-lg-4">
               <span class="p-1 rounded-top-3 fs-3 border" style="background-color: #F7F7F7;">Todo</span>
               <div class="p-4 d-flex flex-column border-top-0 border">
@@ -292,7 +289,7 @@
                 </div>
               </div>
             </div>
-            <div class="container-fluid mt-2 d-flex flex-column pt-4 col-12 col-md-12 col-lg-4">
+            <div class="container-fluid mt-2 d-flex flex-column pt-4 col-12 col-md-12 col-lg-4 order-last">
                 <div class="p-4 d-flex flex-column rounded-2 border">
                   <div class="p-1 d-flex flex-column rounded-2 border">
                     <div class="mx-2 pt-2">
@@ -318,7 +315,6 @@
                     </div>
                   </div>
                 </div>
-            </div>
             </div>
           </div>
         </section>
